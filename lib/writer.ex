@@ -4,6 +4,10 @@ defmodule Arffy.Writer do
     IO.puts(file, "@relation 'my-arffy-relation'\n\n")
   end
 
+  def write_attributes(file, attrs) do
+    IO.puts(file, "#{attrs}\n")
+  end
+
   def write_data(file, data) do
     IO.puts(file,"@data\n#{data}")
   end
