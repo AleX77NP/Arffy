@@ -2,11 +2,14 @@ defmodule Arffy.Reader do
 
   def read_json_file(path) do
     with {:ok, file_contents} <- File.read(path) do
-      Poison.decode!(file_contents)
+      with {:ok, list} = Poison.decode(file_contents) do # decode json to list of maps
+        list
+      end
     end
   end
 
   def read_csv_file(path) do
+    # read csv file and transform it into the list of maps
     with {:ok, file_contents} <- File.read(path) do
       file_contents
       |> String.split("\n")
