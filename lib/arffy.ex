@@ -16,7 +16,6 @@ defmodule Arffy do
       :ok
 
   """
-
   def json_to_arff(path_read, path_write) do
     json_data = read_json_file(path_read)
     item = hd(json_data)

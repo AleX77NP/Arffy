@@ -1,11 +1,17 @@
 defmodule Arffy.Converter do
 
+  @doc """
+  convert list to arrf @data, each in new line, similar to csv
+  """
   def convert_to_arff_data(list) do
     list
     |> Enum.map(fn x -> Map.values(x) |> Enum.map(fn nil -> ""; x -> x end) |> Enum.join(",") end)
     |> Enum.join("\n") # convert list of maps to one large @datas tring
   end
 
+  @doc """
+  get arff attributes based on value type from the map
+  """
   def convert_to_arff_attributes(elem, list) do
     elem
     |> Enum.map(fn {k, v} -> get_value(v, k, list) end) # get attributes string with name and type
@@ -28,6 +34,9 @@ defmodule Arffy.Converter do
     end
   end
 
+  @doc """
+  get list of all classes, last column values
+  """
   def get_classes(list) do
     list
     |> Enum.map(fn x -> Map.values(x) end)
@@ -37,6 +46,9 @@ defmodule Arffy.Converter do
 
   end
 
+  @doc """
+  check if there are more than 3 unique values in classes list
+  """
   def check_nominal(values, count) do
     if count > 3 do
       {:notnominal}
@@ -46,7 +58,7 @@ defmodule Arffy.Converter do
     end
   end
 
-  defp refactor_class(list) do
+  defp refactor_class(list) do # return all classes and totla count
     values = Enum.uniq(list)
     count = Enum.count(values)
     {values, count}

@@ -1,4 +1,7 @@
 defmodule Arffy.Writer do
+  @doc """
+  write everything in new .arff file
+  """
   def write_content(path, data, attrs) do
     # write arff contents
     combined = combine_contents(get_header(), attrs, data)
