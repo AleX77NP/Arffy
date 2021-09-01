@@ -74,7 +74,7 @@ end
 18,170,5,Gary,NO
 ```
 
-**JSON array to .arrf file:**
+**CSV to .arrf file:**
 
 ```
 1,"Eldon Base for stackable storage shelf, platinum",Muhammed MacIntyre,3,-213.25,38.94,35,Nunavut,Storage & Organization,0.8
