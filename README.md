@@ -1,6 +1,6 @@
 # Arffy
 
-**Simple tool to convert JSON arrayr or CSV to ARFF file. Can be handy for those who use WEKA.**
+**Simple tool to convert JSON array or CSV to ARFF file. Can be handy for those who use WEKA.**
 
 ## Installation
 
