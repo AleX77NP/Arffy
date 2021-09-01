@@ -4,7 +4,7 @@
 
 ## Installation
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed
+Using [Hex](https://hex.pm/packages/arffy), the package can be installed
 by adding `arffy` to your list of dependencies in `mix.exs`:
 
 ```elixir
