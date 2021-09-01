@@ -57,6 +57,22 @@ end
   }
 ]
 ```
+```
+@relation 'my-arffy-relation'
+
+@attribute attr-Age numeric
+@attribute attr-Height numeric
+@attribute attr-Id numeric
+@attribute attr-Name string
+@attribute attr-Tall {NO,YES}
+
+@data
+21,178,1,Ahmad,NO
+34,211,2,John,YES
+21,175,3,Nathan,NO
+44,197,4,Marco,YES
+18,170,5,Gary,NO
+```
 
 Documentation can be generated with [ExDoc](https://github.com/elixir-lang/ex_doc)
 and published on [HexDocs](https://hexdocs.pm). Once published, the docs can
