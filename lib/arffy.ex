@@ -12,7 +12,7 @@ defmodule Arffy do
 
   ## Examples
 
-      iex> Arffy.json_to_arff("/Users/desktop/test.json", "/Users/desktop/test.arff")
+      iex> Arffy.json_to_arff("/Users/aleksandar77np/desktop/test.json", "/Users/aleksandar77np/desktop/test.arff")
       :ok
 
   """
@@ -29,7 +29,7 @@ defmodule Arffy do
 
   ## Examples
 
-      iex> Arffy.csv_to_arff("/Users/desktop/test.csv", "/Users/desktop/test.arff")
+      iex> Arffy.csv_to_arff("/Users/aleksandar77np/desktop/test.csv", "/Users//aleksandar77np/desktop/test.arff")
       :ok
 
   """
