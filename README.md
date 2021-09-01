@@ -17,7 +17,7 @@ end
 ## Examples
 
 **JSON array to .arrf file:**
-Arffy.json_to_arff('/json/path', 'path/to/write/at')
+Arffy.json_to_arff("/json/path", "path/to/write/at")
 
 ```
 [
@@ -76,7 +76,7 @@ Arffy.json_to_arff('/json/path', 'path/to/write/at')
 ```
 
 **CSV to .arrf file:**
-Arffy.csv_to_arff('/csv/path', 'path/to/write/at')
+Arffy.csv_to_arff("/csv/path", "path/to/write/at")
 
 ```
 1,"Eldon Base for stackable storage shelf, platinum",Muhammed MacIntyre,3,-213.25,38.94,35,Nunavut,Storage & Organization,0.8
